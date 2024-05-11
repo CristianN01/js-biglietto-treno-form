@@ -3,23 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <section>
-            <label for="km">Scrivi la distanza da percorrere</label>
-            <input type="text-km" id="km" name="userKm">
-            <label for="eta">Scrivi la tua età</label>
-            <input type="text-eta" id="eta" name="userEta">
-            <button>Calcola</button>
-        </section>
+        
     </header>
-
+    
     <main>
-        <div class="biglietto">
-            <h1>Il costo del biglietto è :</h1>
-        </div>
+        <header class="title">
+            <h2>
+                Inserisci i tuoi dati di viaggio 
+            </h2>
+        </header>
+        <section class="main">
+            <section class="dati">
+                <div class="input-km">
+                    <label for="km">Scrivi la distanza da percorrere</label>
+                    <input type="text-km" id="km" name="userKm">
+                </div>
+                <div class="input-age">
+                    <label for="eta">Scrivi la tua età</label>
+                    <input type="text-eta" id="eta" name="userEta">
+                </div>
+            </section>
+            <button>Calcola</button>
+
+            <section class="biglietto">
+                <div>
+                    <h1>Biglietto non scontato:<span id="biglietto-nosconto"> 0$ </span></h1>
+                </div>
+                <div class="bar"></div>
+                <div>
+                    <h1>Lo sconto applicato è:<span id="sconto-eta"> 0$ </span></h1>
+                </div>
+                <div class="bar"></div>
+                <div>
+                    <h1>Il costo del biglietto è :<span id="prezzo"> 0$ </span></h1>
+                </div>
+                <div class="bar"></div>
+            </section>
+        </section>
+        
+
     </main>
 
     <footer>
